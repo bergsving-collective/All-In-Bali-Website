@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <style>
         :root {
             --bali-green: #1a4332;
@@ -60,17 +64,25 @@
     <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
+                <!-- Logo Image -->
                 <div class="flex items-center">
-                    <span class="text-2xl font-bold tracking-tighter text-[#1a4332]">ALL-IN <span class="text-[#c5a059]">BALI</span></span>
+                    <a href="#">
+                        <img src="/logo.png" alt="All-In Bali Logo" class="h-10 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="hidden text-2xl font-bold tracking-tighter text-[#1a4332]">ALL-IN <span class="text-[#c5a059]">BALI</span></span>
+                    </a>
                 </div>
-                <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest">
+                
+                <!-- Desktop Links -->
+                <div class="hidden md:flex items-center space-x-8 font-medium text-sm uppercase tracking-widest">
                     <a href="#services" class="hover:text-[#c5a059] transition">Services</a>
                     <a href="#about" class="hover:text-[#c5a059] transition">Yogi & Louis</a>
                     <a href="#reviews" class="hover:text-[#c5a059] transition">Reviews</a>
                     <a href="#contact" class="bg-[#1a4332] text-white px-5 py-2 rounded-full hover:bg-[#c5a059] transition">Book Now</a>
                 </div>
-                <div class="md:hidden">
-                    <button class="text-[#1a4332] p-2">
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-[#1a4332] p-2 hover:bg-gray-100 rounded-lg transition">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                         </svg>
@@ -84,7 +96,7 @@
     <header class="relative h-screen flex items-center justify-center hero-gradient text-white text-center pt-20">
         <div class="max-w-4xl px-4">
             <h1 class="text-5xl md:text-7xl font-bold mb-6">Relax. We'll Fix Everything.</h1>
-            <p class="text-xl md:text-2xl mb-10 font-light max-w-2xl mx-auto">From custom tours and villa rentals to your airport SIM card. The ultimate island service by Yogi & Louis.</p>
+            <p class="text-xl md:text-2xl mb-10 font-light max-w-2xl mx-auto">From custom tours and villa rentals to your airport transport and local SIM-cards. The ultimate island service by Yogi & Louis.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#services" class="bg-[#c5a059] text-white px-10 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-transform shadow-lg">Our Services</a>
                 <a href="#contact" class="bg-white text-[#1a4332] px-10 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition shadow-lg">Chat with Yogi</a>
@@ -340,15 +352,16 @@
     <footer class="bg-[#1a4332] text-white py-12 px-4">
         <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
             <div class="col-span-2">
-                <span class="text-2xl font-bold tracking-tighter text-white">ALL-IN <span class="text-[#c5a059]">BALI</span></span>
+                <img src="/logo.png" alt="All-In Bali Logo" class="h-12 w-auto mb-6 brightness-0 invert" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span class="hidden text-2xl font-bold tracking-tighter text-white">ALL-IN <span class="text-[#c5a059]">BALI</span></span>
                 <p class="mt-4 text-gray-400 max-w-sm">The family-run fixer service for your Bali adventure. Let us handle the details while you enjoy the island.</p>
             </div>
             <div>
                 <h4 class="font-bold mb-4">Quick Links</h4>
                 <ul class="text-gray-400 space-y-2 text-sm">
-                    <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                    <li><a href="https://github.com/bergsving-collective/All-In-Bali-Website/tree/main?tab=MIT-1-ov-file" class="hover:text-white">Privacy Policy</a></li>
                     <li><a href="#" class="hover:text-white">Terms of Rental</a></li>
-                    <li><a href="#" class="hover:text-white">Safety Guide</a></li>
+                    <li><a href="https://bali.com/bali/travel-guide/health-safety/" class="hover:text-white">Safety Guide</a></li>
                 </ul>
             </div>
             <div>
@@ -361,12 +374,12 @@
             </div>
         </div>
         <div class="max-w-7xl mx-auto border-t border-white/10 mt-12 pt-8 text-center text-gray-500 text-xs">
-            &copy; 2024 All-In Bali. Developed by Louis.
+            &copy; 2024 All-In Bali. Developed by <a href="https://github.com/bergsving-collective" class="hover:text-white transition">@bergsving-collective</a>.
         </div>
     </footer>
 
     <!-- WhatsApp Float -->
-    <a href="#" class="whatsapp-float hover:scale-110 transition-transform">
+    <a href="https://api.whatsapp.com/send?phone=6281236803300&text=Hi%2C%20Yogi!%20I%20am%20interested%20in%20the%20All-In%20Bali%20experience." class="whatsapp-float hover:scale-110 transition-transform">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.891-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.403-.003 6.557-5.335 11.892-11.891 11.892-1.999 0-3.956-.503-5.69-1.448l-6.302 1.664zm6.305-3.642c1.588.944 3.398 1.441 5.251 1.441 5.513 0 10.005-4.491 10.008-10.004 0-2.66-.1.033-2.071-2.043-5.026-4.04-2.203-5.1-4.887-5.1-5.513 0-10.005 4.491-10.005 10.005 0 2.107.663 4.14 1.919 5.823l-1.023 3.732 3.821-1.005zm10.925-8.103c-.295-.149-1.747-.862-2.017-.961-.272-.099-.471-.148-.67.15-.197.297-.767.961-.941 1.159-.173.199-.347.223-.642.075-.295-.149-1.248-.459-2.376-1.464-.877-.781-1.47-1.747-1.642-2.046-.174-.298-.018-.459.131-.607.133-.133.296-.346.444-.52.149-.173.197-.297.296-.495.099-.198.05-.371-.025-.52-.075-.148-.67-1.611-.918-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.747-.714 1.995-1.404.248-.689.248-1.28.173-1.404-.074-.124-.272-.198-.57-.347z"/>
         </svg>
@@ -377,7 +390,6 @@
         document.getElementById('baliForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Yogi's WhatsApp Number (Replace with his actual number including country code, e.g., 62812345678)
             const phoneNumber = "6281236803300"; 
             
             const name = document.getElementById('formName').value;
@@ -391,7 +403,6 @@
 
             const interestsText = selectedInterests.length > 0 ? selectedInterests.join(", ") : "General Inquiry";
 
-            // Constructing the message
             const fullMessage = `Halo Yogi! I am interested in All-In Bali services.%0A%0A` +
                                 `*Name:* ${encodeURIComponent(name)}%0A` +
                                 `*Contact:* ${encodeURIComponent(contact)}%0A` +
@@ -400,7 +411,6 @@
 
             const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${fullMessage}`;
             
-            // Redirect to WhatsApp
             window.open(whatsappUrl, '_blank');
         });
     </script>
