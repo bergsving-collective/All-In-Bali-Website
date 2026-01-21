@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="manifest" href="/site.webmanifest">
     <style>
         /* Smooth scrolling for in-page anchor links */
         html { scroll-behavior: smooth; }
@@ -28,10 +28,19 @@
         h1, h2, h3, .font-serif {
             font-family: 'Playfair Display', serif;
         }
+        @keyframes slowZoom {
+            from {
+                background-size: 100%;
+            }
+            to {
+                background-size: 110%;
+            }
+        }
         .hero-gradient {
             background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=2000');
             background-size: cover;
             background-position: center;
+            animation: slowZoom 5s ease-in-out infinite alternate;
         }
         .glass-card {
             background: rgba(255, 255, 255, 0.9);
@@ -78,7 +87,7 @@
                 <div class="hidden md:flex items-center space-x-8 font-medium text-sm uppercase tracking-widest">
                     <a href="#services" class="hover:text-[#c5a059] transition">Services</a>
                     <a href="#about" class="hover:text-[#c5a059] transition">Yogi & Louis</a>
-                    <a href="#reviews" class="hover:text-[#c5a059] transition">Reviews</a>
+                    <a href="#gallery" class="hover:text-[#c5a059] transition">Reviews</a>
                     <a href="#contact" class="bg-[#1a4332] text-white px-5 py-2 rounded-full hover:bg-[#c5a059] transition">Book Now</a>
                 </div>
 
@@ -96,7 +105,7 @@
             <div id="mobileMenu" class="md:hidden hidden px-4 pt-2 pb-4 space-y-1">
                 <a href="#services" class="block text-[#1a4332] font-medium uppercase tracking-widest py-2 hover:text-[#c5a059] transition">Services</a>
                 <a href="#about" class="block text-[#1a4332] font-medium uppercase tracking-widest py-2 hover:text-[#c5a059] transition">Yogi & Louis</a>
-                <a href="#reviews" class="block text-[#1a4332] font-medium uppercase tracking-widest py-2 hover:text-[#c5a059] transition">Reviews</a>
+                <a href="#gallery" class="block text-[#1a4332] font-medium uppercase tracking-widest py-2 hover:text-[#c5a059] transition">Reviews</a>
                 <a href="#contact" class="block bg-[#1a4332] text-white px-4 py-2 rounded-full hover:bg-[#c5a059] transition w-max">Book Now</a>
             </div>
             </div>
@@ -198,19 +207,51 @@
                     </ul>
                 </div>
 
-                <!-- Logistics -->
+                <!-- SIM Cards -->
                 <div class="service-card bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
                     <div class="w-16 h-16 bg-[#f9f7f2] rounded-2xl flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#c5a059]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-3">SIMs & Transfers</h3>
-                    <p class="text-gray-600 mb-6">Hit the ground running. We meet you at arrivals with a working SIM card and a cold water.</p>
+                    <h3 class="text-2xl font-bold mb-3">Local SIM Cards</h3>
+                    <p class="text-gray-600 mb-6">Stay connected from day one. Pre-activated SIM cards waiting for you with data and credit.</p>
                     <ul class="text-sm space-y-2 text-gray-500">
-                        <li>• Pre-activated SIM Cards</li>
-                        <li>• VIP Airport fast-track</li>
-                        <li>• Private Airport Pickup</li>
+                        <li>• Pre-activated & ready</li>
+                        <li>• Multiple data plans</li>
+                        <li>• Delivered at airport</li>
+                    </ul>
+                </div>
+
+                <!-- Airport Transfers -->
+                <div class="service-card bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                    <div class="w-16 h-16 bg-[#f9f7f2] rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#c5a059]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7h12M8 7a2 2 0 100-4 2 2 0 000 4zm0 0a2 2 0 110 4 2 2 0 01-4 4m4-4l8-8m-4 12h8a2 2 0 002-2V7a2 2 0 00-2-2h-8" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Airport Transfers</h3>
+                    <p class="text-gray-600 mb-6">Arrive stress-free. Private pickup with a smile, cold water, and local tips waiting.</p>
+                    <ul class="text-sm space-y-2 text-gray-500">
+                        <li>• Private vehicle pickup</li>
+                        <li>• Professional drivers</li>
+                        <li>• On-time guarantee</li>
+                    </ul>
+                </div>
+
+                <!-- Tattoos & Piercings -->
+                <div class="service-card bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                    <div class="w-16 h-16 bg-[#f9f7f2] rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#c5a059]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Tattoos & Piercings</h3>
+                    <p class="text-gray-600 mb-6">Authentic Balinese designs or your custom artwork. We connect you with Bali's most trusted artists.</p>
+                    <ul class="text-sm space-y-2 text-gray-500">
+                        <li>• Local artist connections</li>
+                        <li>• Safety & hygiene certified</li>
+                        <li>• Custom design consultation</li>
                     </ul>
                 </div>
 
@@ -277,7 +318,7 @@
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-[3/4]">
-                    <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&q=80&w=600" class="gallery-img w-full h-full object-cover" alt="Rice Terrace">
+                    <img src="https://images.unsplash.com/photo-1656247203824-3d6f99461ba4?q=80&w=764&auto=format&fit=crop" class="gallery-img w-full h-full object-cover" alt="Rice Terrace">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-square md:aspect-[3/4]">
                     <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&q=80&w=600" class="gallery-img w-full h-full object-cover" alt="Temple">
@@ -286,19 +327,19 @@
                     <img src="https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&q=80&w=600" class="gallery-img w-full h-full object-cover" alt="Beach sunset">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-square md:aspect-[3/4]">
-                    <img src="https://images.unsplash.com/photo-1558005530-d7c4dd9847d2?auto=format&fit=crop&q=80&w=600" class="gallery-img w-full h-full object-cover" alt="Happy Travelers">
+                    <img src="https://images.unsplash.com/photo-1692462464986-18373b2d8b3e?w=500&auto=format&fit=crop&q=60" class="gallery-img w-full h-full object-cover" alt="Happy Travelers">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-square md:aspect-[3/4] md:-mt-8">
-                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=600" class="gallery-img w-full h-full object-cover" alt="Villa Life">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1170&auto=format&fit=crop" class="gallery-img w-full h-full object-cover" alt="Villa Life">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-[3/4]">
                     <img src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?auto=format&fit=crop&q=80&w=600" class="gallery-img w-full h-full object-cover" alt="Dolphins Lovina">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-square md:aspect-[3/4] md:mt-4">
-                    <img src="https://images.unsplash.com/photo-1540206395-6880f94933af?auto=format&fit=crop&q=80&w=600" class="gallery-img w-full h-full object-cover" alt="Waterfall Hike">
+                    <img src="https://images.unsplash.com/photo-1690039059538-7c08716f6623?q=80&w=765&auto=format&fit=crop" class="gallery-img w-full h-full object-cover" alt="Waterfall Hike">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-[3/4]">
-                    <img src="https://images.unsplash.com/photo-1573138373254-8e4382583842?auto=format&fit=crop&q=80&w=600" class="gallery-img w-full h-full object-cover" alt="Scooter Rental">
+                    <img src="https://images.unsplash.com/photo-1578774963517-ff9d1d23d5fb?q=80&w=687&auto=format&fit=crop" class="gallery-img w-full h-full object-cover" alt="Scooter Rental">
                 </div>
             </div>
             
@@ -375,7 +416,7 @@
     <footer class="bg-[#1a4332] text-white py-12 px-4">
         <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
             <div class="col-span-2">
-                <img src="logo.png" alt="All-In Bali Logo" class="h-12 w-auto mb-6 brightness-0 invert" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <img src="/logo.png" alt="All-In Bali Logo" class="h-12 w-auto mb-6 brightness-0 invert" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                 <span class="hidden text-2xl font-bold tracking-tighter text-white">ALL-IN <span class="text-[#c5a059]">BALI</span></span>
                 <p class="mt-4 text-gray-400 max-w-sm">The family-run fixer service for your Bali adventure. Let us handle the details while you enjoy the island.</p>
             </div>
