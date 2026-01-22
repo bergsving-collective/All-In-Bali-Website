@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | All-In Bali | Guided Tours, Rentals & More</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Explore All-In Bali services: custom tours, rentals, villas, transfers, SIM cards, and more. One local family handles every detail.">
+    <meta property="og:title" content="All-In Bali Services">
+    <meta property="og:description" content="Custom tours, rentals, villas, transfers, and island essentials handled by Yogi & Ucok. One message, full Bali support.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="assets/tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
@@ -78,6 +84,13 @@
             background-size: cover;
             background-position: center;
         }
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        textarea:focus-visible {
+            outline: 2px solid var(--bali-gold);
+            outline-offset: 2px;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -118,7 +131,6 @@
                 <a href="index.html#about" class="block text-[#1a4332] font-medium uppercase tracking-widest py-2 hover:text-[#c5a059] transition">Yogi & Ucok</a>
                 <a href="gallery.html" class="block text-[#1a4332] font-medium uppercase tracking-widest py-2 hover:text-[#c5a059] transition">Gallery</a>
                 <a href="index.html#contact" class="block bg-[#1a4332] text-white px-4 py-2 rounded-full hover:bg-[#c5a059] transition w-max">Book Now</a>
-            </div>
             </div>
         </div>
     </nav>
@@ -163,8 +175,8 @@
                     </div>
                 </div>
                 <div class="lg:w-1/2 grid grid-cols-2 gap-4">
-                    <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&q=80&w=600" class="rounded-2xl h-64 w-full object-cover shadow-lg" alt="Bali Rice Terrace">
-                    <img src="https://images.unsplash.com/photo-1573790387438-4da905039392?auto=format&fit=crop&q=80&w=600" class="rounded-2xl h-64 w-full object-cover shadow-lg mt-8" alt="Bali Temple">
+                    <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&q=80&w=600" class="rounded-2xl h-64 w-full object-cover shadow-lg" alt="Bali Rice Terrace" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1573790387438-4da905039392?auto=format&fit=crop&q=80&w=600" class="rounded-2xl h-64 w-full object-cover shadow-lg mt-8" alt="Bali Temple" loading="lazy">
                 </div>
             </div>
         </div>
@@ -179,7 +191,7 @@
             </div>
             <div class="grid md:grid-cols-2 gap-12">
                 <div class="bg-white p-6 rounded-3xl shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&q=80&w=800" class="rounded-2xl mb-6 h-60 w-full object-cover" alt="Scooter Rental">
+                    <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&q=80&w=800" class="rounded-2xl mb-6 h-60 w-full object-cover" alt="Scooter Rental" loading="lazy">
                     <h3 class="text-2xl font-bold mb-4 text-[#1a4332]">Bike Rentals</h3>
                     <p class="text-gray-600 mb-6">From Honda Vario to Yamaha NMAX. All bikes come with 2 helmets and are regularly serviced by Ucok.</p>
                     <div class="flex justify-between items-center py-4 border-t border-gray-100">
@@ -188,7 +200,7 @@
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-3xl shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800" class="rounded-2xl mb-6 h-60 w-full object-cover" alt="Car Rental">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800" class="rounded-2xl mb-6 h-60 w-full object-cover" alt="Car Rental" loading="lazy">
                     <h3 class="text-2xl font-bold mb-4 text-[#1a4332]">Car & Driver</h3>
                     <p class="text-gray-600 mb-6">Need a family SUV? Rent a car with or without a driver. Perfect for day trips with luggage or large groups.</p>
                     <div class="flex justify-between items-center py-4 border-t border-gray-100">
@@ -233,7 +245,7 @@
                 </div>
                 <div class="lg:w-1/2">
                     <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1542332213-9b5a5a3fad35?auto=format&fit=crop&q=80&w=800" class="rounded-3xl shadow-xl" alt="Bali Beach Boat">
+                        <img src="https://images.unsplash.com/photo-1542332213-9b5a5a3fad35?auto=format&fit=crop&q=80&w=800" class="rounded-3xl shadow-xl" alt="Bali Beach Boat" loading="lazy">
                         <div class="absolute -bottom-10 -left-10 bg-[#c5a059] text-white p-6 rounded-2xl hidden md:block">
                             <p class="font-bold text-xl tracking-tight">VIP Airport Pickup</p>
                             <p class="text-sm opacity-90">Personalized name-board & cold water.</p>
@@ -292,7 +304,7 @@
     </footer>
 
     <!-- WhatsApp Float -->
-    <a href="https://api.whatsapp.com/send?phone=6281236803300&text=Hi%2C%20Yogi!%20I%20am%20interested%20in%20the%20All-In%20Bali%20experience." class="whatsapp-float hover:scale-110 transition-transform">
+    <a href="https://api.whatsapp.com/send?phone=6281236803300&text=Hi%2C%20Yogi!%20I%20am%20interested%20in%20the%20All-In%20Bali%20experience." class="whatsapp-float hover:scale-110 transition-transform" aria-label="Chat on WhatsApp with Yogi">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.891-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.403-.003 6.557-5.335 11.892-11.891 11.892-1.999 0-3.956-.503-5.69-1.448l-6.302 1.664zm6.305-3.642c1.588.944 3.398 1.441 5.251 1.441 5.513 0 10.005-4.491 10.008-10.004 0-2.66-.1.033-2.071-2.043-5.026-4.04-2.203-5.1-4.887-5.1-5.513 0-10.005 4.491-10.005 10.005 0 2.107.663 4.14 1.919 5.823l-1.023 3.732 3.821-1.005zm10.925-8.103c-.295-.149-1.747-.862-2.017-.961-.272-.099-.471-.148-.67.15-.197.297-.767.961-.941 1.159-.173.199-.347.223-.642.075-.295-.149-1.248-.459-2.376-1.464-.877-.781-1.47-1.747-1.642-2.046-.174-.298-.018-.459.131-.607.133-.133.296-.346.444-.52.149-.173.197-.297.296-.495.099-.198.05-.371-.025-.52-.075-.148-.67-1.611-.918-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.747-.714 1.995-1.404.248-.689.248-1.28.173-1.404-.074-.124-.272-.198-.57-.347z"/>
         </svg>

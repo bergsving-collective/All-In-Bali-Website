@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guest Gallery | All-In Bali - Memories from the Island</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Browse real guest memories from the All-In Bali experience. Tours, rentals, landscapes, and villas captured across the island.">
+    <meta property="og:title" content="All-In Bali Guest Gallery">
+    <meta property="og:description" content="Real moments from real travelers across Bali. Explore tours, rentals, landscapes, and villas.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="assets/tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
@@ -60,6 +66,13 @@
             align-items: center;
             padding: 20px;
         }
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        textarea:focus-visible {
+            outline: 2px solid var(--bali-gold);
+            outline-offset: 2px;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -101,7 +114,6 @@
                 <a href="#" class="block text-[#1a4332] font-medium uppercase tracking-widest py-2 hover:text-[#c5a059] transition">Gallery</a>
                 <a href="index.html#contact" class="block bg-[#1a4332] text-white px-4 py-2 rounded-full hover:bg-[#c5a059] transition w-max">Book Now</a>
             </div>
-            </div>
         </div>
     </nav>
 
@@ -132,7 +144,7 @@
             <!-- Item 1: Tour -->
             <div class="gallery-card group" data-category="tours">
                 <div class="relative overflow-hidden rounded-3xl">
-                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=800" class="w-full object-cover" alt="Uluwatu Sunset" onclick="openLightbox(this.src)">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=800" class="w-full object-cover" alt="Uluwatu Sunset" onclick="openLightbox(this.src)" loading="lazy">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
                         <p class="text-white text-sm font-medium">Uluwatu Sunset Tour with Yogi</p>
                     </div>
@@ -142,7 +154,7 @@
             <!-- Item 2: Rental -->
             <div class="gallery-card group" data-category="rentals">
                 <div class="relative overflow-hidden rounded-3xl">
-                    <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&q=80&w=800" class="w-full object-cover" alt="Bike Rental" onclick="openLightbox(this.src)">
+                    <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&q=80&w=800" class="w-full object-cover" alt="Bike Rental" onclick="openLightbox(this.src)" loading="lazy">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
                         <p class="text-white text-sm font-medium">Fresh NMAX from Ucok</p>
                     </div>
@@ -152,7 +164,7 @@
             <!-- Item 3: Landscape -->
             <div class="gallery-card group" data-category="landscapes">
                 <div class="relative overflow-hidden rounded-3xl">
-                    <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&q=80&w=800" class="w-full object-cover" alt="Rice Terrace" onclick="openLightbox(this.src)">
+                    <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&q=80&w=800" class="w-full object-cover" alt="Rice Terrace" onclick="openLightbox(this.src)" loading="lazy">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
                         <p class="text-white text-sm font-medium">Tegalalang Morning Hike</p>
                     </div>
@@ -162,7 +174,7 @@
             <!-- Item 4: Villa -->
             <div class="gallery-card group" data-category="villas">
                 <div class="relative overflow-hidden rounded-3xl">
-                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=800" class="w-full object-cover" alt="Villa Life" onclick="openLightbox(this.src)">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=800" class="w-full object-cover" alt="Villa Life" onclick="openLightbox(this.src)" loading="lazy">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
                         <p class="text-white text-sm font-medium">Canggu Villa Managed by Ucok</p>
                     </div>
@@ -172,7 +184,7 @@
             <!-- Item 5: Tour -->
             <div class="gallery-card group" data-category="tours">
                 <div class="relative overflow-hidden rounded-3xl">
-                    <img src="https://images.unsplash.com/photo-1542332213-9b5a5a3fad35?auto=format&fit=crop&q=80&w=800" class="w-full object-cover" alt="Beach Boat" onclick="openLightbox(this.src)">
+                    <img src="https://images.unsplash.com/photo-1542332213-9b5a5a3fad35?auto=format&fit=crop&q=80&w=800" class="w-full object-cover" alt="Beach Boat" onclick="openLightbox(this.src)" loading="lazy">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
                         <p class="text-white text-sm font-medium">Nusa Penida Fast Boat Service</p>
                     </div>
@@ -182,7 +194,7 @@
             <!-- Item 6: Landscapes -->
             <div class="gallery-card group" data-category="landscapes">
                 <div class="relative overflow-hidden rounded-3xl">
-                    <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&q=80&w=800" class="w-full object-cover" alt="Temple" onclick="openLightbox(this.src)">
+                    <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&q=80&w=800" class="w-full object-cover" alt="Temple" onclick="openLightbox(this.src)" loading="lazy">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
                         <p class="text-white text-sm font-medium">Sacred Besakih Temple</p>
                     </div>
@@ -192,7 +204,7 @@
             <!-- Item 7: Rentals -->
             <div class="gallery-card group" data-category="rentals">
                 <div class="relative overflow-hidden rounded-3xl">
-                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800" class="w-full object-cover" alt="Car Rental" onclick="openLightbox(this.src)">
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800" class="w-full object-cover" alt="Car Rental" onclick="openLightbox(this.src)" loading="lazy">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
                         <p class="text-white text-sm font-medium">Family SUV Airport Delivery</p>
                     </div>
@@ -202,7 +214,7 @@
             <!-- Item 8: Tours -->
             <div class="gallery-card group" data-category="tours">
                 <div class="relative overflow-hidden rounded-3xl">
-                    <img src="https://images.unsplash.com/photo-1573790387438-4da905039392?auto=format&fit=crop&q=80&w=800" class="w-full object-cover" alt="Bali Monkeys" onclick="openLightbox(this.src)">
+                    <img src="https://images.unsplash.com/photo-1573790387438-4da905039392?auto=format&fit=crop&q=80&w=800" class="w-full object-cover" alt="Bali Monkeys" onclick="openLightbox(this.src)" loading="lazy">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
                         <p class="text-white text-sm font-medium">Monkey Forest Expedition</p>
                     </div>
@@ -212,7 +224,7 @@
             <!-- Item 9: Tours -->
             <div class="gallery-card group" data-category="tours">
                 <div class="relative overflow-hidden rounded-3xl">
-                    <img src="https://images.unsplash.com/photo-1690039059538-7c08716f6623?q=80&w=800&auto=format&fit=crop" class="w-full object-cover" alt="Waterfall Hike" onclick="openLightbox(this.src)">
+                    <img src="https://images.unsplash.com/photo-1690039059538-7c08716f6623?q=80&w=800&auto=format&fit=crop" class="w-full object-cover" alt="Waterfall Hike" onclick="openLightbox(this.src)" loading="lazy">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
                         <p class="text-white text-sm font-medium">Hidden Waterfall Treks</p>
                     </div>

@@ -1,0 +1,11 @@
+{
+  "name": "all-in-bali-website",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./assets/tailwind.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./assets/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

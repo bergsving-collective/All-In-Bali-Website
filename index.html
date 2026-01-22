@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All-In Bali | Guided Tours, Rentals & Essentials by Yogi & Ucok</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="All-In Bali is a family-run fixer service for tours, rentals, villas, transfers, and essentials. One WhatsApp handles your entire Bali trip.">
+    <meta property="og:title" content="All-In Bali | Guided Tours, Rentals & Essentials">
+    <meta property="og:description" content="Custom tours, rentals, villas, transfers, and island essentials handled by Yogi & Ucok. One message, full Bali support.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="assets/tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
@@ -80,6 +86,13 @@
             font-weight: 600;
             text-decoration: none;
         }
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        textarea:focus-visible {
+            outline: 2px solid var(--bali-gold);
+            outline-offset: 2px;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -120,7 +133,6 @@
                 <a href="#about" class="block text-[#1a4332] font-medium uppercase tracking-widest py-2 hover:text-[#c5a059] transition">Yogi & Ucok</a>
                 <a href="gallery.html" class="block text-[#1a4332] font-medium uppercase tracking-widest py-2 hover:text-[#c5a059] transition">Gallery</a>
                 <a href="#contact" class="block bg-[#1a4332] text-white px-4 py-2 rounded-full hover:bg-[#c5a059] transition w-max">Book Now</a>
-            </div>
             </div>
         </div>
     </nav>
@@ -277,11 +289,11 @@
                             <a href="#contact" class="inline-block bg-[#1a4332] text-white px-6 py-3 rounded-xl font-semibold">Just Ask Us</a>
                         </div>
                         <div class="hidden md:block">
-                            <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&q=80&w=300" class="rounded-2xl w-48 h-48 object-cover" alt="Bali vibe">
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&q=80&w=300" class="rounded-2xl w-48 h-48 object-cover" alt="Bali vibe" loading="lazy">
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -291,7 +303,7 @@
             <div class="flex flex-col lg:flex-row items-center gap-16">
                 <div class="lg:w-1/2 relative">
                     <div class="absolute -top-10 -left-10 w-40 h-40 bg-[#f9f7f2] rounded-full z-0"></div>
-                    <img src="https://images.unsplash.com/photo-1720238281650-9adab07ea511?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Yogi and Ucok" class="relative z-10 rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500">
+                    <img src="https://images.unsplash.com/photo-1720238281650-9adab07ea511?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Yogi and Ucok" class="relative z-10 rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500" loading="lazy">
                     <div class="absolute -bottom-6 -right-6 bg-[#c5a059] p-8 rounded-2xl z-20 text-white shadow-xl">
                         <p class="text-3xl font-serif italic">"We treat you like family."</p>
                     </div>
@@ -331,28 +343,28 @@
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-[3/4]">
-                    <img src="https://images.unsplash.com/photo-1656247203824-3d6f99461ba4?q=80&w=764&auto=format&fit=crop" class="gallery-img w-full h-full object-cover" alt="Rice Terrace">
+                    <img src="https://images.unsplash.com/photo-1656247203824-3d6f99461ba4?q=80&w=764&auto=format&fit=crop" class="gallery-img w-full h-full object-cover" alt="Rice Terrace" loading="lazy">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-square md:aspect-[3/4]">
-                    <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&q=80&w=600" class="gallery-img w-full h-full object-cover" alt="Temple">
+                    <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&q=80&w=600" class="gallery-img w-full h-full object-cover" alt="Temple" loading="lazy">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-[3/4] md:mt-8">
-                    <img src="https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&q=80&w=600" class="gallery-img w-full h-full object-cover" alt="Beach sunset">
+                    <img src="https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&q=80&w=600" class="gallery-img w-full h-full object-cover" alt="Beach sunset" loading="lazy">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-square md:aspect-[3/4]">
-                    <img src="https://images.unsplash.com/photo-1692462464986-18373b2d8b3e?w=500&auto=format&fit=crop&q=60" class="gallery-img w-full h-full object-cover" alt="Happy Travelers">
+                    <img src="https://images.unsplash.com/photo-1692462464986-18373b2d8b3e?w=500&auto=format&fit=crop&q=60" class="gallery-img w-full h-full object-cover" alt="Happy Travelers" loading="lazy">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-square md:aspect-[3/4] md:-mt-8">
-                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1170&auto=format&fit=crop" class="gallery-img w-full h-full object-cover" alt="Villa Life">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1170&auto=format&fit=crop" class="gallery-img w-full h-full object-cover" alt="Villa Life" loading="lazy">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-[3/4]">
-                    <img src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?auto=format&fit=crop&q=80&w=600" class="gallery-img w-full h-full object-cover" alt="Dolphins Lovina">
+                    <img src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?auto=format&fit=crop&q=80&w=600" class="gallery-img w-full h-full object-cover" alt="Dolphins Lovina" loading="lazy">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-square md:aspect-[3/4] md:mt-4">
-                    <img src="https://images.unsplash.com/photo-1690039059538-7c08716f6623?q=80&w=765&auto=format&fit=crop" class="gallery-img w-full h-full object-cover" alt="Waterfall Hike">
+                    <img src="https://images.unsplash.com/photo-1690039059538-7c08716f6623?q=80&w=765&auto=format&fit=crop" class="gallery-img w-full h-full object-cover" alt="Waterfall Hike" loading="lazy">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-[3/4]">
-                    <img src="https://images.unsplash.com/photo-1578774963517-ff9d1d23d5fb?q=80&w=687&auto=format&fit=crop" class="gallery-img w-full h-full object-cover" alt="Scooter Rental">
+                    <img src="https://images.unsplash.com/photo-1578774963517-ff9d1d23d5fb?q=80&w=687&auto=format&fit=crop" class="gallery-img w-full h-full object-cover" alt="Scooter Rental" loading="lazy">
                 </div>
             </div>
             
@@ -370,6 +382,29 @@
     </section>
 
 
+    <!-- Testimonials -->
+    <section class="py-24 px-4 bg-white">
+        <div class="max-w-5xl mx-auto text-center mb-12">
+            <h2 class="text-4xl md:text-5xl font-bold text-[#1a4332] mb-4">Guests Say It Best</h2>
+            <p class="text-gray-500 italic font-serif">Real moments from real travelers</p>
+            <div class="h-1 w-20 bg-[#c5a059] mx-auto mt-4"></div>
+        </div>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+            <div class="bg-[#f9f7f2] p-8 rounded-3xl text-left shadow-sm">
+                <p class="text-gray-600 mb-6">“We landed at midnight, and Yogi already had a driver, SIM cards, and a scooter ready. Total lifesaver.”</p>
+                <p class="text-[#1a4332] font-semibold">— Sarah, Australia</p>
+            </div>
+            <div class="bg-[#f9f7f2] p-8 rounded-3xl text-left shadow-sm">
+                <p class="text-gray-600 mb-6">“Our custom tour avoided the crowds and felt so personal. Ucok’s photos were incredible.”</p>
+                <p class="text-[#1a4332] font-semibold">— Diego, Spain</p>
+            </div>
+            <div class="bg-[#f9f7f2] p-8 rounded-3xl text-left shadow-sm">
+                <p class="text-gray-600 mb-6">“All-in is the perfect name. We booked everything through one chat and had zero stress.”</p>
+                <p class="text-[#1a4332] font-semibold">— Mei, Singapore</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Form -->
     <section id="contact" class="py-24 px-4 bg-[#f9f7f2]">
         <div class="max-w-3xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
@@ -381,11 +416,11 @@
                 <form id="baliForm" class="space-y-6">
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
-                            <label class="block text-sm font-semibold mb-2">Name</label>
+                            <label class="block text-sm font-semibold mb-2" for="formName">Name</label>
                             <input type="text" id="formName" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#c5a059]" placeholder="Your name">
                         </div>
                         <div>
-                            <label class="block text-sm font-semibold mb-2">Email / Phone</label>
+                            <label class="block text-sm font-semibold mb-2" for="formContact">Email / Phone</label>
                             <input type="text" id="formContact" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#c5a059]" placeholder="How to reach you">
                         </div>
                     </div>
@@ -407,19 +442,14 @@
                             <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
                                 <input type="checkbox" name="interest" value="Tattoos/Piercings" class="accent-[#c5a059]"> Tattoos/Piercings
                             </label>
-                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
-                                <input type="checkbox" name="interest" value="Tattoos/Piercings" class="accent-[#c5a059]"> Tattoos/Piercings
-                            </label>
-                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
-                                <input type="checkbox" name="interest" value="SIM/Transfer" class="accent-[#c5a059]"> SIM/Transfer
-                            </label>
-                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
-                                <input type="checkbox" name="interest" value="Tattoos/Piercings" class="accent-[#c5a059]"> Tattoos/Piercings
-                            </label>
+                        </div>
+                        <div class="mt-4">
+                            <label class="block text-sm font-semibold mb-2" for="formOther">Other (optional)</label>
+                            <input type="text" id="formOther" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#c5a059]" placeholder="Tell us what you need">
                         </div>
                     </div>
                     <div>
-                        <label class="block text-sm font-semibold mb-2">Message</label>
+                        <label class="block text-sm font-semibold mb-2" for="formMessage">Message</label>
                         <textarea id="formMessage" rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#c5a059]" placeholder="Tell Yogi about your plans..."></textarea>
                     </div>
                     <button type="submit" class="w-full bg-[#1a4332] text-white py-4 rounded-xl font-bold text-lg hover:bg-[#c5a059] transition shadow-lg">Send to WhatsApp</button>
@@ -459,7 +489,7 @@
     </footer>
 
     <!-- WhatsApp Float -->
-    <a href="https://api.whatsapp.com/send?phone=6281236803300&text=Hi%2C%20Yogi!%20I%20am%20interested%20in%20the%20All-In%20Bali%20experience." class="whatsapp-float hover:scale-110 transition-transform">
+    <a href="https://api.whatsapp.com/send?phone=6281236803300&text=Hi%2C%20Yogi!%20I%20am%20interested%20in%20the%20All-In%20Bali%20experience." class="whatsapp-float hover:scale-110 transition-transform" aria-label="Chat on WhatsApp with Yogi">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.891-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.403-.003 6.557-5.335 11.892-11.891 11.892-1.999 0-3.956-.503-5.69-1.448l-6.302 1.664zm6.305-3.642c1.588.944 3.398 1.441 5.251 1.441 5.513 0 10.005-4.491 10.008-10.004 0-2.66-.1.033-2.071-2.043-5.026-4.04-2.203-5.1-4.887-5.1-5.513 0-10.005 4.491-10.005 10.005 0 2.107.663 4.14 1.919 5.823l-1.023 3.732 3.821-1.005zm10.925-8.103c-.295-.149-1.747-.862-2.017-.961-.272-.099-.471-.148-.67.15-.197.297-.767.961-.941 1.159-.173.199-.347.223-.642.075-.295-.149-1.248-.459-2.376-1.464-.877-.781-1.47-1.747-1.642-2.046-.174-.298-.018-.459.131-.607.133-.133.296-.346.444-.52.149-.173.197-.297.296-.495.099-.198.05-.371-.025-.52-.075-.148-.67-1.611-.918-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.747-.714 1.995-1.404.248-.689.248-1.28.173-1.404-.074-.124-.272-.198-.57-.347z"/>
         </svg>
@@ -486,12 +516,16 @@
             const name = document.getElementById('formName').value;
             const contact = document.getElementById('formContact').value;
             const message = document.getElementById('formMessage').value;
+            const other = document.getElementById('formOther').value.trim();
             
             const selectedInterests = [];
             document.querySelectorAll('input[name="interest"]:checked').forEach((checkbox) => {
                 selectedInterests.push(checkbox.value);
             });
 
+            if (other) {
+                selectedInterests.push(`Other: ${other}`);
+            }
             const interestsText = selectedInterests.length > 0 ? selectedInterests.join(", ") : "General Inquiry";
 
             const fullMessage = `Halo Yogi! I am interested in All-In Bali services.%0A%0A` +
