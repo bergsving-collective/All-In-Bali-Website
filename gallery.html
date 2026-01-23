@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guest Gallery | All-In Bali - Memories from the Island</title>
-    <meta name="description" content="Browse real guest memories from the All-In Bali experience. Tours, rentals, landscapes, and villas captured across the island.">
-    <meta property="og:title" content="All-In Bali Guest Gallery">
+    <title>Guest Gallery | Ramoti Bali - Memories from the Island</title>
+    <meta name="description" content="Browse real guest memories from the Ramoti Bali experience. Tours, rentals, landscapes, and villas captured across the island.">
+    <meta property="og:title" content="Ramoti Bali Guest Gallery">
     <meta property="og:description" content="Real moments from real travelers across Bali. Explore tours, rentals, landscapes, and villas.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="logo.png">
@@ -77,51 +77,13 @@
 </head>
 <body class="antialiased">
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
-                <!-- Logo Image -->
-                <div class="flex items-center">
-                    <a href="index.html">
-                        <img src="logo.png" alt="All-In Bali Logo" class="h-10 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <span class="hidden text-2xl font-bold tracking-tighter text-[#1a4332]">ALL-IN <span class="text-[#c5a059]">BALI</span></span>
-                    </a>
-                </div>
-                
-                <!-- Desktop Links -->
-                <div class="hidden md:flex items-center space-x-8 font-medium text-sm uppercase tracking-widest">
-                    <a href="services.html" class="hover:text-[#c5a059] transition">Services</a>
-                    <a href="index.html#about" class="hover:text-[#c5a059] transition">Yogi & Ucok</a>
-                    <a href="#" class="hover:text-[#c5a059] transition">Gallery</a>
-                    <a href="#contact" class="bg-[#1a4332] text-white px-5 py-2 rounded-full hover:bg-[#c5a059] transition">Book Now</a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <div class="md:hidden flex items-center">
-                    <button id="mobileMenuButton" aria-expanded="false" aria-controls="mobileMenu" class="text-[#1a4332] p-2 hover:bg-gray-100 rounded-lg transition">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Mobile Menu (hidden by default) -->
-            <div id="mobileMenu" class="md:hidden hidden px-4 pt-2 pb-4 space-y-1">
-                <a href="services.html" class="block text-[#1a4332] font-medium uppercase tracking-widest py-2 hover:text-[#c5a059] transition">Services</a>
-                <a href="index.html#about" class="block text-[#1a4332] font-medium uppercase tracking-widest py-2 hover:text-[#c5a059] transition">Yogi & Ucok</a>
-                <a href="#" class="block text-[#1a4332] font-medium uppercase tracking-widest py-2 hover:text-[#c5a059] transition">Gallery</a>
-                <a href="index.html#contact" class="block bg-[#1a4332] text-white px-4 py-2 rounded-full hover:bg-[#c5a059] transition w-max">Book Now</a>
-            </div>
-        </div>
-    </nav>
+    <div id="site-nav"></div>
 
     <!-- Header -->
     <header class="pt-40 pb-16 px-4 text-center">
         <div class="max-w-4xl mx-auto">
             <span class="text-[#c5a059] font-bold tracking-widest uppercase text-sm">Guest Captures</span>
-            <h1 class="text-5xl md:text-7xl font-bold text-[#1a4332] mt-4 mb-6">The All-In Experience</h1>
+            <h1 class="text-5xl md:text-7xl font-bold text-[#1a4332] mt-4 mb-6">The Ramoti Experience</h1>
             <p class="text-lg text-gray-600 font-light">Real moments from real travelers. From hidden waterfalls to sunset bike rides.</p>
         </div>
     </header>
@@ -242,41 +204,14 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-[#1a4332] text-white py-12 px-4">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
-            <div class="col-span-2">
-                <img src="logo.png" alt="All-In Bali Logo" class="h-12 w-auto mb-6 brightness-0 invert" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                <span class="hidden text-2xl font-bold tracking-tighter text-white">ALL-IN <span class="text-[#c5a059]">BALI</span></span>
-                <p class="mt-4 text-gray-400 max-w-sm">The family-run fixer service for your Bali adventure. Let us handle the details while you enjoy the island.</p>
-            </div>
-            <div>
-                <h4 class="font-bold mb-4">Quick Links</h4>
-                <ul class="text-gray-400 space-y-2 text-sm">
-                    <li><a href="https://github.com/bergsving-collective/All-In-Bali-Website/tree/main?tab=MIT-1-ov-file" class="hover:text-white">Privacy Policy</a></li>
-                    <li><a href="#" class="hover:text-white">Terms of Rental</a></li>
-                    <li><a href="https://bali.com/bali/travel-guide/health-safety/" class="hover:text-white">Safety Guide</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold mb-4">Contact</h4>
-                <ul class="text-gray-400 space-y-2 text-sm">
-                    <li>Jalan Raya Ubud, Bali</li>
-                    <li>hello@allinbali.guide</li>
-                    <li>WhatsApp: +62 812 3456 789</li>
-                </ul>
-            </div>
-        </div>
-        <div class="max-w-7xl mx-auto border-t border-white/10 mt-12 pt-8 text-center text-gray-500 text-xs">
-            &copy; 2024 All-In Bali. Developed in &#x1f1f3;&#x1f1f4; Norway, by <a href="https://github.com/bergsving-collective" class="hover:text-white transition">@bergsving-collective</a>.
-        </div>
-    </footer>
+    <div id="site-footer"></div>
 
     <!-- Lightbox Overlay -->
     <div id="lightbox" onclick="closeLightbox()">
         <img id="lightboxImg" class="max-h-full max-w-full rounded-lg shadow-2xl" src="" alt="Zoomed view">
     </div>
 
+    <script src="assets/js/includes.js"></script>
     <script>
         function filterGallery(category, btn) {
             // Update buttons

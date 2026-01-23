@@ -1,0 +1,34 @@
+<nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20 items-center">
+            <div class="flex items-center">
+                <a href="index.html">
+                    <img src="logo.png" alt="Ramoti Bali Logo" class="h-10 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="hidden text-2xl font-bold tracking-tighter text-[#1a4332]">RAMOTI <span class="text-[#c5a059]">BALI</span></span>
+                </a>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-8 font-medium text-sm uppercase tracking-widest">
+                <a href="services.html" class="hover:text-[#c5a059] transition">Services</a>
+                <a href="index.html#about" class="hover:text-[#c5a059] transition">Yogi & Ucok</a>
+                <a href="gallery.html" class="hover:text-[#c5a059] transition">Gallery</a>
+                <a href="index.html#contact" class="bg-[#1a4332] text-white px-5 py-2 rounded-full hover:bg-[#c5a059] transition">Book Now</a>
+            </div>
+
+            <div class="md:hidden flex items-center">
+                <button id="mobileMenuButton" aria-expanded="false" aria-controls="mobileMenu" class="text-[#1a4332] p-2 hover:bg-gray-100 rounded-lg transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="md:hidden hidden px-4 pt-2 pb-4 space-y-1">
+            <a href="services.html" class="block text-[#1a4332] font-medium uppercase tracking-widest py-2 hover:text-[#c5a059] transition">Services</a>
+            <a href="index.html#about" class="block text-[#1a4332] font-medium uppercase tracking-widest py-2 hover:text-[#c5a059] transition">Yogi & Ucok</a>
+            <a href="gallery.html" class="block text-[#1a4332] font-medium uppercase tracking-widest py-2 hover:text-[#c5a059] transition">Gallery</a>
+            <a href="index.html#contact" class="block bg-[#1a4332] text-white px-4 py-2 rounded-full hover:bg-[#c5a059] transition w-max">Book Now</a>
+        </div>
+    </div>
+</nav>
