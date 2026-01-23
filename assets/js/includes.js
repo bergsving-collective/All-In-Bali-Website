@@ -1,6 +1,7 @@
 const includeTargets = [
     { id: 'site-nav', path: 'nav.html' },
-    { id: 'site-footer', path: 'footer.html' }
+    { id: 'site-footer', path: 'footer.html' },
+    { id: 'site-whatsapp', path: 'whatsapp.html' }
 ];
 
 const loadInclude = async ({ id, path }) => {
