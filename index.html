@@ -396,27 +396,45 @@
                         <label class="block text-sm font-semibold mb-2">I am interested in...</label>
                         <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
                             <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
-                                <input type="checkbox" name="interest" value="Tours" class="accent-[#c5a059]"> Tours
+                                <input type="checkbox" name="interest" value="Tailor-Made Tours" class="accent-[#c5a059]"> Tailor-Made Tours
                             </label>
                             <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
-                                <input type="checkbox" name="interest" value="Rentals" class="accent-[#c5a059]"> Rentals
+                                <input type="checkbox" name="interest" value="Full Day Tours" class="accent-[#c5a059]"> Full Day Tours
                             </label>
                             <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
-                                <input type="checkbox" name="interest" value="Villa" class="accent-[#c5a059]"> Villa
+                                <input type="checkbox" name="interest" value="Half Day Tours" class="accent-[#c5a059]"> Half Day Tours
                             </label>
                             <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
-                                <input type="checkbox" name="interest" value="SIM/Transfer" class="accent-[#c5a059]"> SIM/Transfer
+                                <input type="checkbox" name="interest" value="Nature & Waterfalls" class="accent-[#c5a059]"> Nature & Waterfalls
                             </label>
                             <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
-                                <input type="checkbox" name="interest" value="Tattoos/Piercings" class="accent-[#c5a059]"> Tattoos/Piercings
+                                <input type="checkbox" name="interest" value="Mount Batur Trek" class="accent-[#c5a059]"> Mount Batur Trek
                             </label>
                             <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
-                                <input type="checkbox" id="interestOther" name="interest" value="Other" class="accent-[#c5a059]"> Other
+                                <input type="checkbox" name="interest" value="Scooter Rental" class="accent-[#c5a059]"> Scooter Rental
+                            </label>
+                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" name="interest" value="Private Car & Driver" class="accent-[#c5a059]"> Private Car & Driver
+                            </label>
+                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" name="interest" value="Airport Transfers" class="accent-[#c5a059]"> Airport Transfers
+                            </label>
+                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" name="interest" value="SIM-Card Help" class="accent-[#c5a059]"> SIM-Card Help
+                            </label>
+                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" name="interest" value="Fast Boat Tickets" class="accent-[#c5a059]"> Fast Boat Tickets
+                            </label>
+                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" name="interest" value="Local Assistance" class="accent-[#c5a059]"> Local Assistance
+                            </label>
+                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" id="interestCustomPlanning" name="interest" value="Custom Planning" class="accent-[#c5a059]"> Custom Planning
                             </label>
                         </div>
-                        <div class="mt-4 hidden" id="otherField">
-                            <label class="block text-sm font-semibold mb-2" for="formOther">Other (optional)</label>
-                            <input type="text" id="formOther" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#c5a059]" placeholder="Tell us what you need">
+                        <div class="mt-4 hidden" id="customPlanningField">
+                            <label class="block text-sm font-semibold mb-2" for="formCustomPlanning">Custom Planning details</label>
+                            <input type="text" id="formCustomPlanning" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#c5a059]" placeholder="Tell us your dates, interests, and pace">
                         </div>
                     </div>
                     <div>
@@ -435,20 +453,20 @@
 
     <script src="assets/js/includes.js"></script>
     <script>
-        const otherCheckbox = document.getElementById('interestOther');
-        const otherField = document.getElementById('otherField');
-        const otherInput = document.getElementById('formOther');
+        const customPlanningCheckbox = document.getElementById('interestCustomPlanning');
+        const customPlanningField = document.getElementById('customPlanningField');
+        const customPlanningInput = document.getElementById('formCustomPlanning');
 
-        const toggleOtherField = () => {
-            const isChecked = otherCheckbox.checked;
-            otherField.classList.toggle('hidden', !isChecked);
+        const toggleCustomPlanningField = () => {
+            const isChecked = customPlanningCheckbox.checked;
+            customPlanningField.classList.toggle('hidden', !isChecked);
             if (!isChecked) {
-                otherInput.value = '';
+                customPlanningInput.value = '';
             }
         };
 
-        otherCheckbox.addEventListener('change', toggleOtherField);
-        toggleOtherField();
+        customPlanningCheckbox.addEventListener('change', toggleCustomPlanningField);
+        toggleCustomPlanningField();
 
         document.getElementById('baliForm').addEventListener('submit', function(e) {
             e.preventDefault();
@@ -458,15 +476,14 @@
             const name = document.getElementById('formName').value;
             const contact = document.getElementById('formContact').value;
             const message = document.getElementById('formMessage').value;
-            const other = otherInput.value.trim();
             
             const selectedInterests = [];
             document.querySelectorAll('input[name="interest"]:checked').forEach((checkbox) => {
                 selectedInterests.push(checkbox.value);
             });
-
-            if (otherCheckbox.checked && other) {
-                selectedInterests.push(`Other: ${other}`);
+            const customPlanningDetails = customPlanningInput.value.trim();
+            if (customPlanningCheckbox.checked && customPlanningDetails) {
+                selectedInterests.push(`Custom Planning details: ${customPlanningDetails}`);
             }
             const interestsText = selectedInterests.length > 0 ? selectedInterests.join(", ") : "General Inquiry";
 
@@ -474,7 +491,8 @@
                                 `*Name:* ${encodeURIComponent(name)}%0A` +
                                 `*Contact:* ${encodeURIComponent(contact)}%0A` +
                                 `*Interested in:* ${encodeURIComponent(interestsText)}%0A` +
-                                `*Message:* ${encodeURIComponent(message)}`;
+                                `*Message:* ${encodeURIComponent(message)}%0A%0A` +
+                                `Sent from Ramoti.com`;
 
             const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${fullMessage}`;
             
