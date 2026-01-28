@@ -21,8 +21,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
     <link rel="manifest" href="site.webmanifest">
     <script type="application/ld+json">
         {
@@ -322,7 +323,7 @@
             <div class="flex flex-col lg:flex-row items-center gap-16">
                 <div class="lg:w-1/2 relative">
                     <div class="absolute -top-10 -left-10 w-40 h-40 bg-[#f9f7f2] rounded-full z-0"></div>
-                    <img src="/photos/yogilouis.png" alt="Yogi and Ucok" class="relative z-10 rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500" loading="lazy">
+                    <img src="photos/yogilouis.png" alt="Yogi and Ucok" class="relative z-10 rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500" loading="lazy">
                     <div class="absolute -bottom-6 -right-6 bg-[#c5a059] p-8 rounded-2xl z-20 text-white shadow-xl">
                         <p class="text-3xl font-serif italic">"We treat you like family."</p>
                     </div>
@@ -392,9 +393,25 @@
                     View Full Gallery →
                 </a>
                 <p class="text-gray-500 mb-4">Follow us for more updates</p>
-                <div class="flex justify-center gap-6">
-                    <a href="https://www.facebook.com/yogibalidriver/" class="text-[#1a4332] font-semibold hover:text-[#c5a059]">Facebook</a>
-                    <a href="#" class="text-[#1a4332] font-semibold hover:text-[#c5a059]">TripAdvisor</a>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://www.facebook.com/yogibalidriver" class="inline-flex items-center gap-3 rounded-full bg-[#1a4332] px-6 py-3 text-white font-semibold shadow-lg transition hover:bg-[#c5a059] hover:scale-105" aria-label="Follow Ramoti on Facebook" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M13.5 9H15a1 1 0 001-1V6.5A1.5 1.5 0 0014.5 5H13a4 4 0 00-4 4v2H7a1 1 0 000 2h2v6a1 1 0 001 1h2a1 1 0 001-1v-6h2.2a1 1 0 00.98-.8l.4-2a1 1 0 00-.98-1.2H13V9a1 1 0 011-1z"/>
+                        </svg>
+                        Facebook
+                    </a>
+                    <a href="https://www.instagram.com/yogibalidriver" class="inline-flex items-center gap-3 rounded-full bg-[#1a4332] px-6 py-3 text-white font-semibold shadow-lg transition hover:bg-[#c5a059] hover:scale-105" aria-label="Follow Ramoti on Instagram" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M7 3h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4V7a4 4 0 014-4zm10 2H7a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2zm-5 3a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6zm5.25-2.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5z"/>
+                        </svg>
+                        Instagram
+                    </a>
+                    <a href="https://www.tiktok.com/@yogi.bali.driver" class="inline-flex items-center gap-3 rounded-full bg-[#1a4332] px-6 py-3 text-white font-semibold shadow-lg transition hover:bg-[#c5a059] hover:scale-105" aria-label="Follow Ramoti on TikTok" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M14.5 4a1 1 0 00-1 1v9.25a3.75 3.75 0 11-2.5-3.54 1 1 0 10-.74-1.86A5.75 5.75 0 1015.5 14V8.2a7.1 7.1 0 003.5.9 1 1 0 100-2 5.1 5.1 0 01-4.1-2.06A1 1 0 0014.5 4z"/>
+                        </svg>
+                        TikTok
+                    </a>
                 </div>
             </div>
         </div>
